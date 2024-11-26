@@ -1,0 +1,21 @@
+version: "2.20.3"
+services:
+#  web:
+#    image: nginx:latest
+#    ports:
+#      - "8080:80"
+#    volumes:
+#      - ./web:/usr/share/nginx/html
+#    networks:
+#      - mynetwork
+  dbcad:
+    container_name: dbcad_ifood
+    image: postgres:16.4
+    environment:
+      POSTGRES_ROOT_PASSWORD: xpto1234
+      POSTGRES_DATABASE: dbcad
+      POSTGRES_USER: dbcad
+      POSTGRES_PASSWORD: xpto1234
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432:5432"
