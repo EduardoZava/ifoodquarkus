@@ -1,1 +1,4 @@
 # ifoodquarkus
+
+
+mvn quarkus:dev
