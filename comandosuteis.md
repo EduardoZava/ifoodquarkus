@@ -43,14 +43,30 @@ docker ps -a
 
 docker-compose up -d
 
-2019  sudo docker-compose down
-2020  sudo docker-compose up -d
-2021  ping ifoodquarkus_default
-2022  sudo docker inspect   --format '{{ .NetworkSettings.IPAddress }}' 30f418a
-2023  sudo docker ps -a
-2028  sudo docker-compose down
-2029  sudo docker-compose up -d
-2030  sudo docker ps -a
-2031  sudo docker logs c8b
-2033  sudo docker inspect   --format '{{ .NetworkSettings.IPAddress }}' c8b
-2034  sudo docker inspect   c8b
+sudo docker-compose down
+sudo docker-compose up -d
+ping ifoodquarkus_default
+sudo docker inspect   --format '{{ .NetworkSettings.IPAddress }}' 30f418a
+sudo docker ps -a
+sudo docker-compose down
+sudo docker-compose up -d
+sudo docker ps -a
+sudo docker logs c8b
+sudo docker inspect   --format '{{ .NetworkSettings.IPAddress }}' c8b
+sudo docker inspect   c8b
+sudo docker-compose up --force-recreate -d
+
+#json uteis
+
+#inclusao de um novo restaurante
+{
+  "cnpj": "88899995555",
+  "nome": "EZ ENTERPRISE",
+  "proprietario": "ezava"
+}
+
+{
+  "cnpj": "88899995555",
+  "nome": "Restaurante do Zé",
+  "proprietario": "ezava"
+}
